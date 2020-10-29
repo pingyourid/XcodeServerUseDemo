@@ -18,7 +18,18 @@
 		77614D6125382E4C00E7F7C3 /* ViewControllerC.m in Sources */ = {isa = PBXBuildFile; fileRef = 77614D6025382E4C00E7F7C3 /* ViewControllerC.m */; };
 		77614D652538300800E7F7C3 /* ViewControllerD.m in Sources */ = {isa = PBXBuildFile; fileRef = 77614D642538300800E7F7C3 /* ViewControllerD.m */; };
 		77614F2B2539478D00E7F7C3 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 77614F2A2539478D00E7F7C3 /* Tools.m */; };
+		77D9ED6F254A48E500FB3C6E /* PresentTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77D9ED6E254A48E500FB3C6E /* PresentTestTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77D9ED71254A48E500FB3C6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 776149A22538255400E7F7C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 776149A92538255400E7F7C3;
+			remoteInfo = PresentTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		776149AA2538255400E7F7C3 /* PresentTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PresentTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,10 +52,20 @@
 		77614D642538300800E7F7C3 /* ViewControllerD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerD.m; sourceTree = "<group>"; };
 		77614F292539478D00E7F7C3 /* Tools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		77614F2A2539478D00E7F7C3 /* Tools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		77D9ED6C254A48E500FB3C6E /* PresentTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresentTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77D9ED6E254A48E500FB3C6E /* PresentTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentTestTests.m; sourceTree = "<group>"; };
+		77D9ED70254A48E500FB3C6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		776149A72538255400E7F7C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D9ED69254A48E500FB3C6E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				776149AC2538255400E7F7C3 /* PresentTest */,
+				77D9ED6D254A48E500FB3C6E /* PresentTestTests */,
 				776149AB2538255400E7F7C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				776149AA2538255400E7F7C3 /* PresentTest.app */,
+				77D9ED6C254A48E500FB3C6E /* PresentTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,6 +119,15 @@
 			path = PresentTest;
 			sourceTree = "<group>";
 		};
+		77D9ED6D254A48E500FB3C6E /* PresentTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				77D9ED6E254A48E500FB3C6E /* PresentTestTests.m */,
+				77D9ED70254A48E500FB3C6E /* Info.plist */,
+			);
+			path = PresentTestTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -116,6 +148,24 @@
 			productReference = 776149AA2538255400E7F7C3 /* PresentTest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		77D9ED6B254A48E500FB3C6E /* PresentTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77D9ED73254A48E500FB3C6E /* Build configuration list for PBXNativeTarget "PresentTestTests" */;
+			buildPhases = (
+				77D9ED68254A48E500FB3C6E /* Sources */,
+				77D9ED69254A48E500FB3C6E /* Frameworks */,
+				77D9ED6A254A48E500FB3C6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77D9ED72254A48E500FB3C6E /* PBXTargetDependency */,
+			);
+			name = PresentTestTests;
+			productName = PresentTestTests;
+			productReference = 77D9ED6C254A48E500FB3C6E /* PresentTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -126,6 +176,10 @@
 				TargetAttributes = {
 					776149A92538255400E7F7C3 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					77D9ED6B254A48E500FB3C6E = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 776149A92538255400E7F7C3;
 					};
 				};
 			};
@@ -143,6 +197,7 @@
 			projectRoot = "";
 			targets = (
 				776149A92538255400E7F7C3 /* PresentTest */,
+				77D9ED6B254A48E500FB3C6E /* PresentTestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -155,6 +210,13 @@
 				776149BD2538255600E7F7C3 /* LaunchScreen.storyboard in Resources */,
 				776149BA2538255600E7F7C3 /* Assets.xcassets in Resources */,
 				776149B82538255400E7F7C3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77D9ED6A254A48E500FB3C6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,7 +238,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		77D9ED68254A48E500FB3C6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D9ED6F254A48E500FB3C6E /* PresentTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77D9ED72254A48E500FB3C6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 776149A92538255400E7F7C3 /* PresentTest */;
+			targetProxy = 77D9ED71254A48E500FB3C6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		776149B62538255400E7F7C3 /* Main.storyboard */ = {
@@ -350,6 +428,48 @@
 			};
 			name = Release;
 		};
+		77D9ED74254A48E500FB3C6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = U94Z3ALPGR;
+				INFOPLIST_FILE = PresentTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.PresentTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PresentTest.app/PresentTest";
+			};
+			name = Debug;
+		};
+		77D9ED75254A48E500FB3C6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = U94Z3ALPGR;
+				INFOPLIST_FILE = PresentTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.PresentTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PresentTest.app/PresentTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +487,15 @@
 			buildConfigurations = (
 				776149C42538255600E7F7C3 /* Debug */,
 				776149C52538255600E7F7C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77D9ED73254A48E500FB3C6E /* Build configuration list for PBXNativeTarget "PresentTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77D9ED74254A48E500FB3C6E /* Debug */,
+				77D9ED75254A48E500FB3C6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
