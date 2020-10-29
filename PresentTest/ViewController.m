@@ -27,6 +27,7 @@
     [self.view addSubview:btn];
     
     NSLog(@"ViewController:%p", self);
+    NSLog(@"need a bug:%f", btn);
 }
 
 - (void)openB:(id)sender {
